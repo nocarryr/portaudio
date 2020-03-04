@@ -30,6 +30,51 @@
           "name": "PA_BUILD_SHARED",
           "value": "False",
           "type": "BOOL"
+        },
+        {
+          "name": "PA_DLL_LINK_WITH_STATIC_RUNTIME",
+          "value": "False",
+          "type": "BOOL"
+        },
+        {
+          "name": "CMAKE_C_FLAGS_DEBUG",
+          "value": "/MTd /Zi /Ob0 /Od /RTC1",
+          "type": "STRING"
+        },
+        {
+          "name": "CMAKE_C_FLAGS_RELEASE",
+          "value": "/MT /O2 /Ob2 /DNDEBUG",
+          "type": "STRING"
+        },
+        {
+          "name": "CMAKE_C_FLAGS_MINSIZEREL",
+          "value": "/MT /O1 /Ob1 /DNDEBUG",
+          "type": "STRING"
+        },
+        {
+          "name": "CMAKE_C_FLAGS_RELWITHDEBINFO",
+          "value": "/MT /Zi /O2 /Ob1 /DNDEBUG",
+          "type": "STRING"
+        },
+        {
+          "name": "CMAKE_CXX_FLAGS_DEBUG",
+          "value": "/MTd /Zi /Ob0 /Od /RTC1",
+          "type": "STRING"
+        },
+        {
+          "name": "CMAKE_CXX_FLAGS_MINSIZEREL",
+          "value": "/MT /O1 /Ob1 /DNDEBUG",
+          "type": "STRING"
+        },
+        {
+          "name": "CMAKE_CXX_FLAGS_RELEASE",
+          "value": "/MT /O2 /Ob2 /DNDEBUG",
+          "type": "STRING"
+        },
+        {
+          "name": "CMAKE_CXX_FLAGS_RELWITHDEBINFO",
+          "value": "/MT /Zi /O2 /Ob1 /DNDEBUG",
+          "type": "STRING"
         }
       ]
     },
@@ -58,6 +103,51 @@
           "name": "PA_USE_ASIO",
           "value": "True",
           "type": "BOOL"
+        },
+        {
+          "name": "PA_DLL_LINK_WITH_STATIC_RUNTIME",
+          "value": "False",
+          "type": "BOOL"
+        },
+        {
+          "name": "CMAKE_C_FLAGS_DEBUG",
+          "value": "/MTd /Zi /Ob0 /Od /RTC1",
+          "type": "STRING"
+        },
+        {
+          "name": "CMAKE_C_FLAGS_RELEASE",
+          "value": "/MT /O2 /Ob2 /DNDEBUG",
+          "type": "STRING"
+        },
+        {
+          "name": "CMAKE_C_FLAGS_MINSIZEREL",
+          "value": "/MT /O1 /Ob1 /DNDEBUG",
+          "type": "STRING"
+        },
+        {
+          "name": "CMAKE_C_FLAGS_RELWITHDEBINFO",
+          "value": "/MT /Zi /O2 /Ob1 /DNDEBUG",
+          "type": "STRING"
+        },
+        {
+          "name": "CMAKE_CXX_FLAGS_DEBUG",
+          "value": "/MTd /Zi /Ob0 /Od /RTC1",
+          "type": "STRING"
+        },
+        {
+          "name": "CMAKE_CXX_FLAGS_MINSIZEREL",
+          "value": "/MT /O1 /Ob1 /DNDEBUG",
+          "type": "STRING"
+        },
+        {
+          "name": "CMAKE_CXX_FLAGS_RELEASE",
+          "value": "/MT /O2 /Ob2 /DNDEBUG",
+          "type": "STRING"
+        },
+        {
+          "name": "CMAKE_CXX_FLAGS_RELWITHDEBINFO",
+          "value": "/MT /Zi /O2 /Ob1 /DNDEBUG",
+          "type": "STRING"
         }
       ]
     },
@@ -91,6 +181,51 @@
           "name": "PA_ENABLE_DEBUG_OUTPUT",
           "value": "True",
           "type": "BOOL"
+        },
+        {
+          "name": "PA_DLL_LINK_WITH_STATIC_RUNTIME",
+          "value": "False",
+          "type": "BOOL"
+        },
+        {
+          "name": "CMAKE_C_FLAGS_DEBUG",
+          "value": "/MTd /Zi /Ob0 /Od /RTC1",
+          "type": "STRING"
+        },
+        {
+          "name": "CMAKE_C_FLAGS_RELEASE",
+          "value": "/MT /O2 /Ob2 /DNDEBUG",
+          "type": "STRING"
+        },
+        {
+          "name": "CMAKE_C_FLAGS_MINSIZEREL",
+          "value": "/MT /O1 /Ob1 /DNDEBUG",
+          "type": "STRING"
+        },
+        {
+          "name": "CMAKE_C_FLAGS_RELWITHDEBINFO",
+          "value": "/MT /Zi /O2 /Ob1 /DNDEBUG",
+          "type": "STRING"
+        },
+        {
+          "name": "CMAKE_CXX_FLAGS_DEBUG",
+          "value": "/MTd /Zi /Ob0 /Od /RTC1",
+          "type": "STRING"
+        },
+        {
+          "name": "CMAKE_CXX_FLAGS_MINSIZEREL",
+          "value": "/MT /O1 /Ob1 /DNDEBUG",
+          "type": "STRING"
+        },
+        {
+          "name": "CMAKE_CXX_FLAGS_RELEASE",
+          "value": "/MT /O2 /Ob2 /DNDEBUG",
+          "type": "STRING"
+        },
+        {
+          "name": "CMAKE_CXX_FLAGS_RELWITHDEBINFO",
+          "value": "/MT /Zi /O2 /Ob1 /DNDEBUG",
+          "type": "STRING"
         }
       ]
     },
