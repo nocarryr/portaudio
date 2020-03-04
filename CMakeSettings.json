@@ -1,0 +1,121 @@
+﻿{
+  "configurations": [
+    {
+      "name": "x64-Debug-Static",
+      "generator": "Ninja",
+      "configurationType": "Debug",
+      "inheritEnvironments": [ "msvc_x64_x64" ],
+      "buildRoot": "${projectDir}\\out\\build\\${name}",
+      "installRoot": "${projectDir}\\out\\install\\${name}",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "-v",
+      "ctestCommandArgs": "",
+      "variables": [
+        {
+          "name": "ASIOSDK_ROOT_DIR",
+          "value": "ASIOSDK",
+          "type": "PATH"
+        },
+        {
+          "name": "PA_USE_ASIO",
+          "value": "True",
+          "type": "BOOL"
+        },
+        {
+          "name": "PA_ENABLE_DEBUG_OUTPUT",
+          "value": "True",
+          "type": "BOOL"
+        },
+        {
+          "name": "PA_BUILD_SHARED",
+          "value": "False",
+          "type": "BOOL"
+        }
+      ]
+    },
+    {
+      "name": "x64-Release-Static",
+      "generator": "Ninja",
+      "configurationType": "RelWithDebInfo",
+      "buildRoot": "${projectDir}\\out\\build\\${name}",
+      "installRoot": "${projectDir}\\out\\install\\${name}",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "-v",
+      "ctestCommandArgs": "",
+      "inheritEnvironments": [ "msvc_x64_x64" ],
+      "variables": [
+        {
+          "name": "ASIOSDK_ROOT_DIR",
+          "value": "ASIOSDK",
+          "type": "PATH"
+        },
+        {
+          "name": "PA_BUILD_SHARED",
+          "value": "False",
+          "type": "BOOL"
+        },
+        {
+          "name": "PA_USE_ASIO",
+          "value": "True",
+          "type": "BOOL"
+        }
+      ]
+    },
+    {
+      "name": "x86-Debug-Static",
+      "generator": "Ninja",
+      "configurationType": "Debug",
+      "buildRoot": "${projectDir}\\out\\build\\${name}",
+      "installRoot": "${projectDir}\\out\\install\\${name}",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "-v",
+      "ctestCommandArgs": "",
+      "inheritEnvironments": [ "msvc_x86" ],
+      "variables": [
+        {
+          "name": "ASIOSDK_ROOT_DIR",
+          "value": "ASIOSDK",
+          "type": "PATH"
+        },
+        {
+          "name": "PA_BUILD_SHARED",
+          "value": "False",
+          "type": "BOOL"
+        },
+        {
+          "name": "PA_USE_ASIO",
+          "value": "True",
+          "type": "BOOL"
+        },
+        {
+          "name": "PA_ENABLE_DEBUG_OUTPUT",
+          "value": "True",
+          "type": "BOOL"
+        }
+      ]
+    },
+    {
+      "name": "x86-Release-Static",
+      "generator": "Ninja",
+      "configurationType": "RelWithDebInfo",
+      "buildRoot": "${projectDir}\\out\\build\\${name}",
+      "installRoot": "${projectDir}\\out\\install\\${name}",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "-v",
+      "ctestCommandArgs": "",
+      "inheritEnvironments": [ "msvc_x86" ],
+      "variables": [
+        {
+          "name": "ASIOSDK_ROOT_DIR",
+          "value": "ASIOSDK",
+          "type": "PATH"
+        },
+        {
+          "name": "PA_BUILD_SHARED",
+          "value": "False",
+          "type": "BOOL"
+        }
+      ]
+    }
+  ]
+}
