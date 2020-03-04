@@ -1,303 +1,6 @@
 ﻿{
   "configurations": [
     {
-      "name": "x64-Debug-Static",
-      "generator": "Ninja",
-      "configurationType": "Debug",
-      "inheritEnvironments": [ "msvc_x64_x64" ],
-      "buildRoot": "${projectDir}\\out\\build\\${name}",
-      "installRoot": "${projectDir}\\out\\install\\${name}",
-      "cmakeCommandArgs": "",
-      "buildCommandArgs": "-v",
-      "ctestCommandArgs": "",
-      "variables": [
-        {
-          "name": "ASIOSDK_ROOT_DIR",
-          "value": "ASIOSDK",
-          "type": "PATH"
-        },
-        {
-          "name": "PA_USE_ASIO",
-          "value": "True",
-          "type": "BOOL"
-        },
-        {
-          "name": "PA_ENABLE_DEBUG_OUTPUT",
-          "value": "True",
-          "type": "BOOL"
-        },
-        {
-          "name": "PA_BUILD_SHARED",
-          "value": "False",
-          "type": "BOOL"
-        },
-        {
-          "name": "PA_DLL_LINK_WITH_STATIC_RUNTIME",
-          "value": "False",
-          "type": "BOOL"
-        },
-        {
-          "name": "CMAKE_C_FLAGS_DEBUG",
-          "value": "/MTd /Zi /Ob0 /Od /RTC1",
-          "type": "STRING"
-        },
-        {
-          "name": "CMAKE_C_FLAGS_RELEASE",
-          "value": "/MT /O2 /Ob2 /DNDEBUG",
-          "type": "STRING"
-        },
-        {
-          "name": "CMAKE_C_FLAGS_MINSIZEREL",
-          "value": "/MT /O1 /Ob1 /DNDEBUG",
-          "type": "STRING"
-        },
-        {
-          "name": "CMAKE_C_FLAGS_RELWITHDEBINFO",
-          "value": "/MT /Zi /O2 /Ob1 /DNDEBUG",
-          "type": "STRING"
-        },
-        {
-          "name": "CMAKE_CXX_FLAGS_DEBUG",
-          "value": "/MTd /Zi /Ob0 /Od /RTC1",
-          "type": "STRING"
-        },
-        {
-          "name": "CMAKE_CXX_FLAGS_MINSIZEREL",
-          "value": "/MT /O1 /Ob1 /DNDEBUG",
-          "type": "STRING"
-        },
-        {
-          "name": "CMAKE_CXX_FLAGS_RELEASE",
-          "value": "/MT /O2 /Ob2 /DNDEBUG",
-          "type": "STRING"
-        },
-        {
-          "name": "CMAKE_CXX_FLAGS_RELWITHDEBINFO",
-          "value": "/MT /Zi /O2 /Ob1 /DNDEBUG",
-          "type": "STRING"
-        }
-      ]
-    },
-    {
-      "name": "x64-Release-Static",
-      "generator": "Ninja",
-      "configurationType": "RelWithDebInfo",
-      "buildRoot": "${projectDir}\\out\\build\\${name}",
-      "installRoot": "${projectDir}\\out\\install\\${name}",
-      "cmakeCommandArgs": "",
-      "buildCommandArgs": "-v",
-      "ctestCommandArgs": "",
-      "inheritEnvironments": [ "msvc_x64_x64" ],
-      "variables": [
-        {
-          "name": "ASIOSDK_ROOT_DIR",
-          "value": "ASIOSDK",
-          "type": "PATH"
-        },
-        {
-          "name": "PA_BUILD_SHARED",
-          "value": "False",
-          "type": "BOOL"
-        },
-        {
-          "name": "PA_USE_ASIO",
-          "value": "True",
-          "type": "BOOL"
-        },
-        {
-          "name": "PA_DLL_LINK_WITH_STATIC_RUNTIME",
-          "value": "False",
-          "type": "BOOL"
-        },
-        {
-          "name": "CMAKE_C_FLAGS_DEBUG",
-          "value": "/MTd /Zi /Ob0 /Od /RTC1",
-          "type": "STRING"
-        },
-        {
-          "name": "CMAKE_C_FLAGS_RELEASE",
-          "value": "/MT /O2 /Ob2 /DNDEBUG",
-          "type": "STRING"
-        },
-        {
-          "name": "CMAKE_C_FLAGS_MINSIZEREL",
-          "value": "/MT /O1 /Ob1 /DNDEBUG",
-          "type": "STRING"
-        },
-        {
-          "name": "CMAKE_C_FLAGS_RELWITHDEBINFO",
-          "value": "/MT /Zi /O2 /Ob1 /DNDEBUG",
-          "type": "STRING"
-        },
-        {
-          "name": "CMAKE_CXX_FLAGS_DEBUG",
-          "value": "/MTd /Zi /Ob0 /Od /RTC1",
-          "type": "STRING"
-        },
-        {
-          "name": "CMAKE_CXX_FLAGS_MINSIZEREL",
-          "value": "/MT /O1 /Ob1 /DNDEBUG",
-          "type": "STRING"
-        },
-        {
-          "name": "CMAKE_CXX_FLAGS_RELEASE",
-          "value": "/MT /O2 /Ob2 /DNDEBUG",
-          "type": "STRING"
-        },
-        {
-          "name": "CMAKE_CXX_FLAGS_RELWITHDEBINFO",
-          "value": "/MT /Zi /O2 /Ob1 /DNDEBUG",
-          "type": "STRING"
-        }
-      ]
-    },
-    {
-      "name": "x86-Debug-Static",
-      "generator": "Ninja",
-      "configurationType": "Debug",
-      "buildRoot": "${projectDir}\\out\\build\\${name}",
-      "installRoot": "${projectDir}\\out\\install\\${name}",
-      "cmakeCommandArgs": "",
-      "buildCommandArgs": "-v",
-      "ctestCommandArgs": "",
-      "inheritEnvironments": [ "msvc_x86" ],
-      "variables": [
-        {
-          "name": "ASIOSDK_ROOT_DIR",
-          "value": "ASIOSDK",
-          "type": "PATH"
-        },
-        {
-          "name": "PA_BUILD_SHARED",
-          "value": "False",
-          "type": "BOOL"
-        },
-        {
-          "name": "PA_USE_ASIO",
-          "value": "True",
-          "type": "BOOL"
-        },
-        {
-          "name": "PA_ENABLE_DEBUG_OUTPUT",
-          "value": "True",
-          "type": "BOOL"
-        },
-        {
-          "name": "PA_DLL_LINK_WITH_STATIC_RUNTIME",
-          "value": "False",
-          "type": "BOOL"
-        },
-        {
-          "name": "CMAKE_C_FLAGS_DEBUG",
-          "value": "/MTd /Zi /Ob0 /Od /RTC1",
-          "type": "STRING"
-        },
-        {
-          "name": "CMAKE_C_FLAGS_RELEASE",
-          "value": "/MT /O2 /Ob2 /DNDEBUG",
-          "type": "STRING"
-        },
-        {
-          "name": "CMAKE_C_FLAGS_MINSIZEREL",
-          "value": "/MT /O1 /Ob1 /DNDEBUG",
-          "type": "STRING"
-        },
-        {
-          "name": "CMAKE_C_FLAGS_RELWITHDEBINFO",
-          "value": "/MT /Zi /O2 /Ob1 /DNDEBUG",
-          "type": "STRING"
-        },
-        {
-          "name": "CMAKE_CXX_FLAGS_DEBUG",
-          "value": "/MTd /Zi /Ob0 /Od /RTC1",
-          "type": "STRING"
-        },
-        {
-          "name": "CMAKE_CXX_FLAGS_MINSIZEREL",
-          "value": "/MT /O1 /Ob1 /DNDEBUG",
-          "type": "STRING"
-        },
-        {
-          "name": "CMAKE_CXX_FLAGS_RELEASE",
-          "value": "/MT /O2 /Ob2 /DNDEBUG",
-          "type": "STRING"
-        },
-        {
-          "name": "CMAKE_CXX_FLAGS_RELWITHDEBINFO",
-          "value": "/MT /Zi /O2 /Ob1 /DNDEBUG",
-          "type": "STRING"
-        }
-      ]
-    },
-    {
-      "name": "x86-Release-Static",
-      "generator": "Ninja",
-      "configurationType": "RelWithDebInfo",
-      "buildRoot": "${projectDir}\\out\\build\\${name}",
-      "installRoot": "${projectDir}\\out\\install\\${name}",
-      "cmakeCommandArgs": "",
-      "buildCommandArgs": "-v",
-      "ctestCommandArgs": "",
-      "inheritEnvironments": [ "msvc_x86" ],
-      "variables": [
-        {
-          "name": "ASIOSDK_ROOT_DIR",
-          "value": "ASIOSDK",
-          "type": "PATH"
-        },
-        {
-          "name": "PA_BUILD_SHARED",
-          "value": "False",
-          "type": "BOOL"
-        },
-        {
-          "name": "PA_DLL_LINK_WITH_STATIC_RUNTIME",
-          "value": "True",
-          "type": "BOOL"
-        },
-        {
-          "name": "CMAKE_C_FLAGS_DEBUG",
-          "value": "/MTd /Zi /Ob0 /Od /RTC1",
-          "type": "STRING"
-        },
-        {
-          "name": "CMAKE_C_FLAGS_RELEASE",
-          "value": "/MT /O2 /Ob2 /DNDEBUG",
-          "type": "STRING"
-        },
-        {
-          "name": "CMAKE_C_FLAGS_MINSIZEREL",
-          "value": "/MT /O1 /Ob1 /DNDEBUG",
-          "type": "STRING"
-        },
-        {
-          "name": "CMAKE_C_FLAGS_RELWITHDEBINFO",
-          "value": "/MT /Zi /O2 /Ob1 /DNDEBUG",
-          "type": "STRING"
-        },
-        {
-          "name": "CMAKE_CXX_FLAGS_DEBUG",
-          "value": "/MTd /Zi /Ob0 /Od /RTC1",
-          "type": "STRING"
-        },
-        {
-          "name": "CMAKE_CXX_FLAGS_MINSIZEREL",
-          "value": "/MT /O1 /Ob1 /DNDEBUG",
-          "type": "STRING"
-        },
-        {
-          "name": "CMAKE_CXX_FLAGS_RELEASE",
-          "value": "/MT /O2 /Ob2 /DNDEBUG",
-          "type": "STRING"
-        },
-        {
-          "name": "CMAKE_CXX_FLAGS_RELWITHDEBINFO",
-          "value": "/MT /Zi /O2 /Ob1 /DNDEBUG",
-          "type": "STRING"
-        }
-      ]
-    },
-    {
       "name": "x86-Release-Shared",
       "generator": "Ninja",
       "configurationType": "RelWithDebInfo",
@@ -367,6 +70,11 @@
           "name": "CMAKE_CXX_FLAGS_RELWITHDEBINFO",
           "value": "/MT /Zi /O2 /Ob1 /DNDEBUG",
           "type": "STRING"
+        },
+        {
+          "name": "PA_LIBNAME_ADD_SUFFIX",
+          "value": "True",
+          "type": "BOOL"
         }
       ]
     },
@@ -440,6 +148,11 @@
           "name": "CMAKE_CXX_FLAGS_RELWITHDEBINFO",
           "value": "/MT /Zi /O2 /Ob1 /DNDEBUG",
           "type": "STRING"
+        },
+        {
+          "name": "PA_LIBNAME_ADD_SUFFIX",
+          "value": "True",
+          "type": "BOOL"
         }
       ]
     },
@@ -518,6 +231,11 @@
           "name": "CMAKE_CXX_FLAGS_RELWITHDEBINFO",
           "value": "/MT /Zi /O2 /Ob1 /DNDEBUG",
           "type": "STRING"
+        },
+        {
+          "name": "PA_LIBNAME_ADD_SUFFIX",
+          "value": "True",
+          "type": "BOOL"
         }
       ]
     },
